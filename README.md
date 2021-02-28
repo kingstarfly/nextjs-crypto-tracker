@@ -14,6 +14,9 @@
 <p align="center"> Quick loading table that displays real-time prices of Cryptocurrencies! 
     <br> 
 </p>
+<h2 align="center">
+  Try it out <a href="https://nextjs-crypto-tracker.vercel.app/">here</a>!
+</h2>
 
 ## 📝 Table of Contents
 
@@ -32,6 +35,7 @@ Taking this chance to play around with cool technologies like Next.JS, SWR and C
 - [NextJS](https://nextjs.org/) - Awesome all-in-one framework (API, routing, SEO-friendly)
 - [SWR](https://swr.vercel.app/) - Client-side data fetching while ensuring validity of data from external API
 - [ReactJS](https://reactjs.org/) - :D
+- [GitHub and Vercel]() - For deployment
 
 ## ✍️ Authors <a name = "authors"></a>
 
