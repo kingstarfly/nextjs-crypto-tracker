@@ -17,7 +17,7 @@ const SearchBar = ({ setSearchTerm }) => {
         focusBorderColor="hidden"
         color="white"
         _placeholder={{ color: "#e2e2e2" }}
-        onChange={handleType}
+        onChange={(e) => handleType(e)}
       />
     </Flex>
   );

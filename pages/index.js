@@ -6,40 +6,42 @@ import useSWR from "swr";
 import CoinList from "../components/CoinList";
 import SearchBar from "../components/SearchBar";
 import fetcher from "../utils/fetcher";
+import { LogoIcon } from "../styles/icon";
+import Shell from "../components/Shell";
 
 export default function Home() {
-  const { data, error } = useSWR("/api/crypto", fetcher);
-  if (error) return <div>Error</div>;
-  // if (data === null) return null;
   const [searchTerm, setSearchTerm] = React.useState("");
+  const { data, error } = useSWR("/api/coin", fetcher, {
+    refreshInterval: 1000,
+  });
+  if (error) return <div>Error</div>;
+  if (!data) return <div>loading...</div>;
 
   const filteredCoinData = data?.filter((coinData) =>
     coinData.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <Box bgColor="blackAlpha.900">
-      <Head>
-        <title>Crypto Tracker</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Shell>
       <Flex
         as="main"
         direction="column"
         alignItems="center"
         margin="0 auto"
         maxW="50vw"
-        py={16}
+        pt={0}
+        pb={16}
         px={4}
         w="100vw"
         minH="100vh"
       >
-        <Heading color="darkgoldenrod" fontSize="5xl" mb={8}>
+        <LogoIcon boxSize={300} color="turquoise" />
+        <Heading color="darkgoldenrod" fontSize="5xl" mt={-16} mb={8}>
           Crypto Tracker
         </Heading>
         <SearchBar setSearchTerm={setSearchTerm} />
         {data && <CoinList data={filteredCoinData} />}
       </Flex>
-    </Box>
+    </Shell>
   );
 }

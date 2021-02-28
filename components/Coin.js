@@ -1,7 +1,20 @@
-import { Box, Flex, Image, Td, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Image,
+  Link,
+  LinkBox,
+  LinkOverlay,
+  Td,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
 
 const Coin = ({ coinData }) => {
+  const router = useRouter();
+
   const {
     id,
     symbol,
@@ -11,8 +24,18 @@ const Coin = ({ coinData }) => {
     price_change_percentage_24h,
     price_change_24h,
   } = coinData;
+
+  const handleRowClick = (e) => {
+    // navigate to the link
+    router.push(`coin/${id}`);
+  };
   return (
-    <Box as="tr" color="whiteAlpha.800">
+    <Box
+      as="tr"
+      color="whiteAlpha.800"
+      _hover={{ background: "teal.700", cursor: "pointer" }}
+      onClick={handleRowClick}
+    >
       <Td>
         <Flex justifyContent="flex-start" alignItems="center">
           <Image src={image} boxSize={8} mr={4} />

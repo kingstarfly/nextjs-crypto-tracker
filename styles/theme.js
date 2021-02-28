@@ -1,17 +1,16 @@
 import React from "react";
-import { theme as chakraTheme } from "@chakra-ui/core";
-
-const theme = {
-  ...chakraTheme,
+// 1. Import `extendTheme`
+import { extendTheme } from "@chakra-ui/react";
+const theme = extendTheme({
   fonts: {
-    ...chakraTheme.fonts,
-    body: `Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"`,
+    body: `Inter, Courier, monospace;`,
+    heading: `MontSerrat, Courier, monospace`,
   },
   fontWeights: {
     normal: 400,
     medium: 600,
     bold: 700,
   },
-};
+});
 
 export default theme;
