@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="img/logo_word.svg" alt="Project logo"></a>
+</p>
 
-## Getting Started
+<h2 align="center">Awesome Crypto Tracker</h2>
 
-First, run the development server:
+<div align="center">
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<p align="center"> Quick loading table that displays real-time prices of Cryptocurrencies! 
+    <br> 
+</p>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📝 Table of Contents
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [📝 Table of Contents](#-table-of-contents)
+- [🧐 About <a name = "about"></a>](#-about-)
+- [⛏️ Built Using <a name = "built_using"></a>](#️-built-using-)
+- [✍️ Authors <a name = "authors"></a>](#️-authors-)
+- [🎉 Acknowledgements <a name = "acknowledgement"></a>](#-acknowledgements-)
 
-## Learn More
+## 🧐 About <a name = "about"></a>
 
-To learn more about Next.js, take a look at the following resources:
+Taking this chance to play around with cool technologies like Next.JS, SWR and Chakra-UI! Loved the development experience! Also created the SVG logo from scratch :D
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⛏️ Built Using <a name = "built_using"></a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [NextJS](https://nextjs.org/) - Awesome all-in-one framework (API, routing, SEO-friendly)
+- [SWR](https://swr.vercel.app/) - Client-side data fetching while ensuring validity of data from external API
+- [ReactJS](https://reactjs.org/) - :D
 
-## Deploy on Vercel
+## ✍️ Authors <a name = "authors"></a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [@kingstarfly](https://github.com/kingstarfly) - Me!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- [@BrianDesign](https://www.youtube.com/watch?v=Kff_KRvpxj4&t=2768s&ab_channel=BrianDesign) - Credits for the youtube video that gave me the initial idea.
